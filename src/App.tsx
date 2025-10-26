@@ -1,5 +1,4 @@
 import { Provider } from "react-redux";
-import "./App.css";
 import { store } from "./redux/store";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
