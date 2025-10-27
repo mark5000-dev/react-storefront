@@ -47,6 +47,7 @@ const ProductCard: FC<Product> = ({
           <img
             src={thumbnail}
             alt={title}
+            loading="lazy"
             className="inline-block h-60 transition-transform duration-200 hover:scale-110"
           />
         </Link>

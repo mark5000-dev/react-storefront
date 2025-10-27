@@ -16,7 +16,7 @@ const Home: FC = () => {
 
   useEffect(() => {
     const fetchProducts = () => {
-      fetch("https://dummyjson.com/products?limit=24")
+      fetch("https://dummyjson.com/products/category/smartphones")
         .then((res) => res.json())
         .then(({ products }) => {
           const productList: Product[] = [];
@@ -34,7 +34,7 @@ const Home: FC = () => {
             });
           });
           dispatch(updateFeaturedList(productList.slice(0, 8)));
-          dispatch(updateNewList(productList.slice(8, 16)));
+          dispatch(updateNewList(productList.slice(8, -1)));
         });
     };
     fetchProducts();

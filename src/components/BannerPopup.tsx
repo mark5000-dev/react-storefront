@@ -17,6 +17,7 @@ const BannerPopup: FC = () => {
       <div className="relative">
         <img
           src="/banner.jpg"
+          loading="lazy"
           alt="banner"
           className="w-[50vw] min-w-[300px] m-auto"
         />

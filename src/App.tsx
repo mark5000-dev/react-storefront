@@ -2,6 +2,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import { Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import { Suspense, lazy } from "react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -11,13 +12,14 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import BannerPopup from "./components/BannerPopup";
 
-import Home from "./pages/Home";
-import Wishlist from "./pages/Wishlist";
-import Profile from "./pages/Profile";
-import AllCategories from "./pages/AllCategories";
-import SingleCategory from "./pages/SingleCategory";
-import AllProducts from "./pages/AllProducts";
-import SingleProduct from "./pages/SingleProduct";
+const Home = lazy(() => import("./pages/Home"));
+const Wishlist = lazy(() => import("./pages/Wishlist"));
+const Profile = lazy(() => import("./pages/Profile"));
+const AllCategories = lazy(() => import("./pages/AllCategories"));
+const SingleCategory = lazy(() => import("./pages/SingleCategory"));
+const AllProducts = lazy(() => import("./pages/AllProducts"));
+const SingleProduct = lazy(() => import("./pages/SingleProduct"));
+
 
 
 
@@ -25,6 +27,7 @@ function App() {
   return (
     <Provider store={store}>
       <Navbar />
+      <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<AllProducts />} />
@@ -38,6 +41,7 @@ function App() {
           <Route path="/account" element={<Profile />} />
         </Route>
       </Routes>
+      </Suspense>
       <Toaster position="bottom-right" reverseOrder={false} />
       <Footer />
       <Cart />

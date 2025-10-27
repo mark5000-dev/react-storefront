@@ -122,13 +122,14 @@ const SingleProduct: FC = () => {
     <div className="container mx-auto pt-8 dark:text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-4 font-karla">
         <div className="space-y-2">
-          <img src={selectedImg} alt="selected" className="h-80" />
+          <img src={selectedImg} loading="lazy" alt="selected" className="h-80" />
           <div className="flex space-x-1 items-center">
             {imgs &&
               imgs.map((_img) => (
                 <img
                   src={_img}
                   key={_img}
+                  loading="lazy"
                   alt="thumb"
                   className={`w-12 cursor-pointer hover:border-2 hover:border-black ${
                     _img === selectedImg ? "border-2 border-black" : ""
