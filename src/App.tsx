@@ -1,21 +1,25 @@
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
-import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import { Toaster } from "react-hot-toast";
+
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cart from "./components/Cart";
-import SingleProduct from "./pages/SingleProduct";
 import LoginModal from "./components/LoginModal";
-import Wishlist from "./pages/Wishlist";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Profile from "./pages/Profile";
-import AllProducts from "./pages/AllProducts";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import BannerPopup from "./components/BannerPopup";
+
+import Home from "./pages/Home";
+import Wishlist from "./pages/Wishlist";
+import Profile from "./pages/Profile";
 import AllCategories from "./pages/AllCategories";
 import SingleCategory from "./pages/SingleCategory";
+import AllProducts from "./pages/AllProducts";
+import SingleProduct from "./pages/SingleProduct";
+
+
 
 function App() {
   return (
@@ -34,7 +38,7 @@ function App() {
           <Route path="/account" element={<Profile />} />
         </Route>
       </Routes>
-      <Toaster position="bottom-center" reverseOrder={false} />
+      <Toaster position="bottom-right" reverseOrder={false} />
       <Footer />
       <Cart />
       <LoginModal />
