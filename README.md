@@ -1,6 +1,8 @@
 # Shopify - a simple eCommerce app
 
-Welcome to my E-commerce App! This project is a dummy e-commerce application built using React, Tailwind CSS, Vite, TypeScript, and Redux Toolkit. It aims to showcase various features commonly found in e-commerce platforms, including a homepage, product listing page, cart functionality, and user-authenticated pages like account and wishlist.
+This project is a dummy e-commerce application built using React, Tailwind CSS, Vite, TypeScript, and Redux Toolkit. It aims to showcase various features commonly found in e-commerce platforms, including a homepage, product listing page, cart functionality, and user-authenticated pages like account and wishlist.
+
+Also making a great starting point for creating a e-commerce shop front. The state management, layouts and designs are easily customizable to suit your needs.
 
 ## Features
 
@@ -17,7 +19,6 @@ Welcome to my E-commerce App! This project is a dummy e-commerce application bui
 - **Vite:** A modern build tool that serves your code via native ES Module imports during development for faster performance.
 - **TypeScript:** A statically typed superset of JavaScript that enhances code quality and developer productivity.
 - **Redux Toolkit:** A simplified state management library for managing application state efficiently.
-- **Cypress:** A next-generation front-end testing tool designed for the modern web.
 
 ## Getting Started
 
@@ -45,8 +46,5 @@ This project is licensed under the [MIT License](LICENSE).
 - Since this is a frontend only project, all the data have been collected from [DummyJSON](https://dummyjson.com/).
 - Special thanks to [Tailwind Labs](https://tailwindcss.com/) and [Redux Toolkit](https://redux-toolkit.js.org/) for their amazing tools and documentation.
 
-## Contact
-
-For any inquiries or feedback, feel free to contact [me](mailto:alim1496@gmail.com).
 
 Happy coding! 🚀
