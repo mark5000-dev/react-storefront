@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import { LuFacebook as Facebook, LuInstagram as Instagram, LuTwitter as Twitter } from "react-icons/lu";
 const Footer: FC = () => {
   return (

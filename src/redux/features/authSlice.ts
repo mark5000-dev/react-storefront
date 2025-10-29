@@ -1,5 +1,6 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { AuthSlice } from "../../models/AuthSlice";
+import { createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
+import type { AuthSlice } from "../../models/AuthSlice";
 
 interface LoginProps {
   username: string;

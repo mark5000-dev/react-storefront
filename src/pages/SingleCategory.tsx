@@ -1,7 +1,8 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import type { FC } from "react";
 import { useParams } from "react-router-dom";
 import { useAppDispatch } from "../redux/hooks";
-import { Product } from "../models/Product";
+import type { Product } from "../models/Product";
 import ProductCard from "../components/ProductCard";
 import { useAppSelector } from "../redux/hooks";
 import { updateLoading } from "../redux/features/homeSlice";

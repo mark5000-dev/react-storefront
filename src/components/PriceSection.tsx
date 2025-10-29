@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import useDiscount from "../hooks/useDiscount";
 
 const PriceSection: FC<{ price: number; discountPercentage: number }> = ({

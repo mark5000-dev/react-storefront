@@ -1,4 +1,4 @@
-import { CartItem } from "./CartItem";
+import type { CartItem } from "./CartItem";
 
 export interface CartSlice {
   cartOpen: boolean;

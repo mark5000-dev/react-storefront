@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { updateBanner } from "../redux/features/homeSlice";
 

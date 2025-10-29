@@ -1,7 +1,8 @@
 import { useAppSelector } from "../redux/hooks";
 import ProductList from "./ProductList";
+import type { FC } from "react";
 
-const TrendingProducts = () => {
+const TrendingProducts: FC = () => {
   const featuredProducts = useAppSelector(
     (state) => state.productReducer.featuredProducts
   );

@@ -1,4 +1,5 @@
-import { FC, useEffect } from "react";
+import { useEffect } from "react";
+import type { FC } from "react";
 import HeroSection from "../components/HeroSection";
 import Features from "../components/Features";
 import TrendingProducts from "../components/TrendingProducts";
@@ -7,7 +8,7 @@ import {
   updateNewList,
   updateFeaturedList,
 } from "../redux/features/productSlice";
-import { Product } from "../models/Product";
+import type { Product } from "../models/Product";
 import LatestProducts from "../components/LatestProducts";
 import Banner from "../components/Banner";
 

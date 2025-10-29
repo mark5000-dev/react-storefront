@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { Product } from "../models/Product";
+import type { FC } from "react";
+import type { Product } from "../models/Product";
 import RatingStar from "./RatingStar";
 import { addToCart } from "../redux/features/cartSlice";
 import { useAppDispatch } from "../redux/hooks";

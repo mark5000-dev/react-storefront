@@ -1,6 +1,7 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import type { FC } from "react";
 import RatingStar from "./RatingStar";
-import { ReviewItem } from "../models/ReviewItem";
+import type { ReviewItem } from "../models/ReviewItem";
 
 const reviews: ReviewItem[] = [
   {

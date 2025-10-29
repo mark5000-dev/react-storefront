@@ -1,8 +1,9 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import type { FC } from "react";
 import { useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { addToCart, setCartState } from "../redux/features/cartSlice";
-import { Product } from "../models/Product";
+import type { Product } from "../models/Product";
 import RatingStar from "../components/RatingStar";
 import PriceSection from "../components/PriceSection";
 import toast from "react-hot-toast";

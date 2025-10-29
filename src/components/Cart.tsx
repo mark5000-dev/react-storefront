@@ -1,4 +1,5 @@
-import { FC, useState } from "react";
+import { useState } from "react";
+import type { FC } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { emptyCart, setCartState } from "../redux/features/cartSlice";

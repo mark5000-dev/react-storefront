@@ -1,7 +1,7 @@
 import { TbTruckDelivery, TbFiretruck } from "react-icons/tb";
 import { RiRefund2Fill } from "react-icons/ri";
 import { MdSupportAgent } from "react-icons/md";
-import { FC } from "react";
+import type { FC } from "react";
 import FeatureCard from "./FeatureCard";
 
 const data = [

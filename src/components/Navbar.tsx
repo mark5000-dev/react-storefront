@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { useAppSelector, useAppDispatch } from "../redux/hooks";

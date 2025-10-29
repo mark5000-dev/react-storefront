@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import { useAppSelector } from "../redux/hooks";
 import ProductList from "../components/ProductList";
 

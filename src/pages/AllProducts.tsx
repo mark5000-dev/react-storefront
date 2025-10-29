@@ -1,8 +1,9 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { FC } from "react";
 import { useAppSelector, useAppDispatch } from "../redux/hooks";
 import { addProducts } from "../redux/features/productSlice";
 import ProductCard from "../components/ProductCard";
-import { Product } from "../models/Product";
+import type { Product } from "../models/Product";
 import { updateLoading } from "../redux/features/homeSlice";
 
 const AllProducts: FC = () => {

@@ -1,4 +1,5 @@
-import { FC, useEffect } from "react";
+import { useEffect } from "react";
+import type { FC } from "react";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { addCategories } from "../redux/features/productSlice";
 import { Link } from "react-router-dom";

@@ -1,5 +1,5 @@
-import { Category } from "./Category";
-import { Product } from "./Product";
+import type { Category } from "./Category";
+import type { Product } from "./Product";
 
 export interface ProductSlice {
   allProducts: Product[];

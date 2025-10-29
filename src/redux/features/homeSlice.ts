@@ -1,5 +1,6 @@
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { HomeSlice } from "../../models/HomeSlice";
+import {  createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
+import type { HomeSlice } from "../../models/HomeSlice";
 
 const initialState: HomeSlice = {
   isBannerVisible: localStorage.getItem("isBannerVisibleClosed") === "true" ? false : true,

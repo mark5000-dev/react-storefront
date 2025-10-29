@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { CartItem } from "../models/CartItem";
+import type { FC } from "react";
+import type { CartItem } from "../models/CartItem";
 import {
   IoIosAddCircleOutline,
   IoIosRemoveCircleOutline,

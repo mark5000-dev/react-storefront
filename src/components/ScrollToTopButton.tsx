@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import type { FC } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
-const ScrollToTopButton: React.FC = () => {
+const ScrollToTopButton: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
